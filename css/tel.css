@@ -1,0 +1,296 @@
+body {
+  background-color: black;
+  min-height : 100vh;
+  padding: 0;
+  margin : 0;
+
+}
+.fond {
+  background: url('monaco.jpg')center/cover;
+  height: 280px;
+  animation: floatImage 4s ease-in-out infinite;
+  transition: 0.3s ease;
+}
+
+.fond h1 {
+  animation: floatImage 4s ease-in-out;
+  transition: 0.3s ease;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav > ul {
+  display: flex; 
+  text-align: center;
+}
+
+nav > ul > li {
+  position: relative; 
+  margin-left: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color : white;
+  display: block; 
+  padding: 10px 15px; 
+}
+nav a {
+    font-weight: bold;
+}
+nav > ul > li:hover > a {
+  color :#D4AF37;
+}
+
+.menu-deroulant > a:after {
+  content : ">";
+  font-size: 15px;
+  margin-left: 7px;
+  display : inline-block;
+  transition: transform 0.2s linear; 
+}
+.menu-deroulant:hover > a:after {
+  transform: rotate(90deg);
+}
+.sous-menu{
+  list-style-type: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  min-width: 200px;
+  background-color: black; 
+  z-index: 10;
+  max-height: 0; /* CLÉ : Cache le menu */
+  overflow: hidden; 
+  transition: max-height 0.8s ease-in-out, border-top 0.8s;
+  border-radius:  0 0 5px 5px;
+  z-index: 10;
+  max-height: 0; 
+  overflow: hidden; 
+}
+
+.menu-deroulant:hover > .sous-menu{
+  max-height: 50em; 
+  border-top:3px solid #D4AF37;
+}
+
+.sous-menu > li > a {
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  align-items:center;
+  display:flex;
+}
+
+.sous-menu >li:hover{
+  background-color:#D4AF37;
+}
+.sous-menu >li:hover>a{
+  color:white;
+}
+
+h1 {
+  color : #D4AF37; 
+  text-align: center;
+}
+h2 {
+  color : white;
+  text-align: center;
+}
+h4 {
+  color : white;
+}
+h3 {
+  color :white;
+}
+h5{
+  color:white;
+  text-align: left;
+}
+
+*{
+    box-sizing : border-box;
+
+}
+
+
+@layer reset, base, swiper;
+
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css') layer(base);
+
+@layer swiper {
+  .swiper {
+    width  : 100%;
+    height : 100%;
+  }
+
+  .swiper-wrapper {
+    display     : flex;
+    align-items : center;
+  }
+
+  .swiper-slide {
+    scale      : 1.25;
+    transition : scale 250ms ease-in-out;
+
+    &.swiper-slide-active {
+      scale   : 2;
+      z-index : 10;
+    }
+
+    &.swiper-slide-prev,
+    &.swiper-slide-next {
+      scale               : 1.7;
+      z-index             : 5;
+      transition-duration : 150ms;
+    }
+    
+    &.swiper-slide-next + & {
+      z-index : 2;
+    }
+  }
+
+  .swiper-slide img {
+    display        : block;
+    border-radius  : 0.5rem;
+    width          : 100%;
+    height         : 100%;
+    object-fit     : cover;
+    user-select    : none;
+  }
+
+  .swiper-button {
+    --position       : 17%;
+    background-color : #F04E23;
+    height           : 3rem;
+    width            : 3rem;
+    border-radius    : 0.5rem;
+    
+    &.swiper-button-prev {
+      left : var(--position);
+    }
+
+    &.swiper-button-next {
+      right : var(--position);
+    }
+
+    &:hover {
+      background-color : #4A261F;
+    }
+
+    &::after {
+      font-size : 1.5rem;
+      color     : white;
+    }
+  }
+}
+
+@layer reset {
+  * {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.photo {
+  margin-right: 23.5px;
+  margin-left: 23.5px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+.imagecontener {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.imagecontener img {
+  display: block;
+   
+}
+.imagecontener .text {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black; 
+}
+.roulette {
+  text-align:left
+}
+.nav{
+  text-align:right;
+}
+.rotate {
+    animation: spin 0.6s linear;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+p{
+  color:#ffffff;
+}
+.ville {
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.voir-plus {
+    background: #ddd;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn {
+  display: block; 
+  margin-left: auto; 
+
+  margin-right: auto;
+  margin-bottom:15px;
+  margin: top 1px;
+  width: 150px; 
+  background-color: #D4AF37;
+  border-radius: 99px;
+}
+
+
+.image-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    z-index: 1;
+}
