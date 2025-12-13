@@ -183,3 +183,13 @@ p{
   margin: 5px 0 0;
   font-size: 14px;
 }
+
+.map{
+  width: 320px;
+  height: 100px;
+}
+.plan {
+  position: absolute;
+  top: 450px; 
+  left: 0px;
+}
