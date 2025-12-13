@@ -142,6 +142,7 @@ p{
     flex-direction: column; 
     align-items: center;
     margin-bottom: 0px;
+    margin-left:100px;
 }
 .note-etoile {
     display: flex;
