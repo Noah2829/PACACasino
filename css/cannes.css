@@ -135,4 +135,86 @@ p{
   max-width: 800px; /
 }
 
+.Avis {
+  margin-right: 30px; 
+  max-width: 800px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.note-etoile {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
 
+
+.etoile {
+  width: 202px;
+  height: 32;
+
+}
+.nbetoile{
+  margin-left: 1200px;
+}
+
+.soiree, .restaurant, .jeux {
+  width: 70px;
+  height: 50px;
+}
+
+  .activite {
+    /* 1. Mettre tous les éléments (img et p) sur la même ligne */
+    display: flex;
+    /* 2. Répartir l'espace horizontalement pour les centrer */
+    justify-content: center;
+    /* 3. Forcer le retour à la ligne après chaque paire icône/texte (si le conteneur est trop petit) */
+    flex-wrap: wrap; 
+    /* 4. Aligner tous les éléments en haut */
+    align-items: flex-start;
+}
+
+/* 5. Mettre l'icône et son texte l'un au-dessus de l'autre */
+.activite img {
+    /* Définit une taille pour les icônes */
+    width: 60px;
+    height: 60px;
+    /* Crée un espace pour l'icône, puis force le texte à s'aligner en dessous */
+    margin-right: 20px; 
+    margin-left: 20px;
+    display: block; /* S'assurer qu'elles occupent leur propre ligne */
+}
+
+/* 6. Centrer le texte sous l'icône */
+.activite p {
+    text-align: center;
+    width: 60px; /* Aligne le texte sous l'image de 60px */
+    margin-right: 20px; 
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*.nbetoile {
+  margin-left: 1000px;
+  margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.etoile{
+  width: 202px;
+  height: 32;
+}
+
+.nbetoile, .etoile img {
+  display: inline-block;
+  vertical-align: middle;
+} */
