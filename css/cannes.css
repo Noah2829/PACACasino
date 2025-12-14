@@ -190,6 +190,19 @@ p{
 }
 .plan {
   position: absolute;
-  top: 450px; 
-  left: 0px;
+  top:375px; /* Ajustez la hauteur pour être sous la bannière, mais pas trop bas */
+  left: -265px; /* Collez-le à gauche (30px de marge) */
+  z-index: 5; /* Assurez-vous qu'il est au-dessus du reste du contenu */
+  color: white; /* Pour s'assurer que le texte est visible */
+  text-align: center; /* Pour aligner le texte dans le bloc */
+}
+
+.itinéraire{
+    position: absolute;
+  top: 400px; /* Ajustez la hauteur pour être sous la bannière, mais pas trop bas */
+  left: -290px; /* Collez-le à gauche (30px de marge) */
+  z-index: 5; /* Assurez-vous qu'il est au-dessus du reste du contenu */
+  color: white; /* Pour s'assurer que le texte est visible */
+  text-align: center; /* Pour aligner le texte dans le bloc */
+
 }
