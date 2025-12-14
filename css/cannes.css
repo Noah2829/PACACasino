@@ -141,8 +141,8 @@ p{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    margin-bottom: 0px;
     margin-left:100px;
+  margin-top:-75px;
 }
 .note-etoile {
     display: flex;
@@ -153,7 +153,7 @@ p{
 
 .etoile {
   width: 202px;
-  height: 32;
+  height: 32px;
 
 }
 .nbetoile{
@@ -184,25 +184,27 @@ p{
   font-size: 14px;
 }
 
-.map{
-  width: 320px;
-  height: 100px;
-}
 .plan {
   position: absolute;
   top:375px; /* Ajustez la hauteur pour être sous la bannière, mais pas trop bas */
-  left: -265px; /* Collez-le à gauche (30px de marge) */
-  z-index: 5; /* Assurez-vous qu'il est au-dessus du reste du contenu */
-  color: white; /* Pour s'assurer que le texte est visible */
+  left: -265px; 
   text-align: center; /* Pour aligner le texte dans le bloc */
 }
 
-.itinéraire{
-    position: absolute;
-  top: 400px; /* Ajustez la hauteur pour être sous la bannière, mais pas trop bas */
-  left: -290px; /* Collez-le à gauche (30px de marge) */
-  z-index: 5; /* Assurez-vous qu'il est au-dessus du reste du contenu */
-  color: white; /* Pour s'assurer que le texte est visible */
-  text-align: center; /* Pour aligner le texte dans le bloc */
-
+.map{
+  position: absolute;
+  top: 500px; /* Ajustez la hauteur pour être sous la bannière, mais pas trop bas */
+  left: 20px; /* Collez-le à gauche (30px de marge) */
+text-align: center;
+width: 320px;
+  height: 100px;
+}
+ .btn {
+display: block;
+background-color: #D4AF37;
+border-radius: 99px;
+  position: absolute;
+   top: 610px; /* Ajustez la hauteur pour être sous la bannière, mais pas trop bas */
+  left: 110px; /* Collez-le à gauche (30px de marge) */
+  text-align: center;
 }
