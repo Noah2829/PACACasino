@@ -173,6 +173,8 @@ margin: top 1px;
 width: 150px; /* Fixer une largeur pour qu'il ne s'étende pas trop */
 background-color: #D4AF37;
 border-radius: 99px;
+font-size: 15px;
+
 }
 
 
@@ -217,4 +219,3 @@ z-index: 1;
 .footer-menu a:hover {
   color: #f5c400; /* jaune au survol */
 }
-
