@@ -168,7 +168,7 @@ margin-left: auto; /* Centre le bouton si il a une largeur fixe et n'est pas "in
 margin-right: auto;
 margin-bottom:15px;
 margin: top 1px;
-width: 150px; /* Fixer une largeur pour qu'il ne s'étende pas trop */
+width: 150px; 
 background-color: #D4AF37;
 border-radius: 99px;
 font-size: 20px;

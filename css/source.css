@@ -1,11 +1,6 @@
 body {
 background-color: black;
 }
-.fond {
-background: url('monaco.jpg')center/cover;
-height: 280px;
-}
-
 header {
 display: flex;
 justify-content: space-between;
@@ -143,77 +138,4 @@ animation: spin 0.6s linear;
 from { transform: rotate(0deg); }
 to { transform: rotate(360deg); }
 }
-p{
-color:#ffffff;
-}
-.ville {
-position: absolute;
-bottom: 5px;
-left: 0;
-right: 0;
-text-align: center;
-}
-.voir-plus {
-background: #ddd;
-border: none;
-padding: 10px 25px;
-font-size: 16px;
-border-radius: 10px;
-cursor: pointer;
-}
 
-.btn {
-display: block; /* S'assurer qu'il prend toute la ligne pour mieux interagir avec margin-top */
-margin-left: auto; /* Centre le bouton si il a une largeur fixe et n'est pas "inline" */
-margin-right: auto;
-margin-bottom:15px;
-margin: top 1px;
-width: 150px; /* Fixer une largeur pour qu'il ne s'étende pas trop */
-background-color: #D4AF37;
-border-radius: 99px;
-font-size: 20px;
-
-}
-
-
-.image-wrapper {
-position: relative;
-border-radius: 8px;
-overflow: hidden; /* Ensures image corners are rounded */
-}
-.image-wrapper::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-border-radius: 8px;
-z-index: 1;
-}
-
-.footer {
-  background-color: #000;
-  padding: 30px 0;
-}
-
-.footer-menu {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer-menu a:hover {
-  color: #f5c400; /* jaune au survol */
-}
