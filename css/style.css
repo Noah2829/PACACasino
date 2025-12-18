@@ -215,8 +215,9 @@ h5 {
     margin-left: 23.5px;
     margin-bottom: 25px;
     border-radius: 8px;
-    width: 184;
-    height: 242;
+    width: 184px;
+    height: 242px;
+    object-fit: cover;
 }
 
 .imagecontener {

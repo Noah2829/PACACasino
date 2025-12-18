@@ -65,7 +65,7 @@
         <section class="casino-list">
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/montecarlo.webp" class="photo" alt="Casino monte-carlo">
+                    <img src="img/montecarlo.webp" class="photo" loading="lazy"  alt="Casino monte-carlo">
                     <h4 class="text">Monte-Carlo</h4>
                     <p class="ville">Monaco</p>
                 </section>
@@ -76,7 +76,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/cannes.webp" class="photo" alt="Casino Cannes">
+                    <img src="img/cannes.webp" class="photo" alt="Casino Cannes" loading="lazy">
                     <h4 class="text">Casino Barrières La Croisette</h4>
                     <p class="ville">Cannes</p>
                 </section>
@@ -88,7 +88,7 @@
             <article class="imagecontener">
                 <section class="image-wrapper">
 
-                    <img src="img/nice.webp" class="photo" alt="Casino Nice">
+                    <img src="img/nice.webp" class="photo" alt="Casino Nice" loading="lazy">
                     <h4 class="text">Casino Barrière Le Ruhk</h4>
                     <p class="ville">Nice</p>
                 </section>
@@ -99,7 +99,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/menton.webp" class="photo" alt="Casino Aix en Provence">
+                    <img src="img/menton.webp" class="photo" alt="Casino Aix en Provence" loading="lazy">
                     <h4 class="text">Casino Barrière</h4>
                     <p class="ville">Menton</p>
                 </section>
@@ -110,7 +110,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/hyeres.webp" class="photo" alt="Casino Hyere">
+                    <img src="img/hyeres.webp" class="photo" alt="Casino Hyere" loading="lazy">
                     <h4 class="text">Pasino Partouche</h4>
                     <p class="ville">Hyères</p>
                 </section>
@@ -122,7 +122,7 @@
             <article class="imagecontener">
                 <section class="image-wrapper">
                     <img src="img/beaulieusurmer.webp" class="photo"
-                        alt="Casino Beaulieu sur Mer">
+                        alt="Casino Beaulieu sur Mer" loading="lazy">
                     <h4 class="text">Casino</h4>
                     <p class="ville">Beaulieu sur Mer</p>
                 </section>
@@ -133,7 +133,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/cavalaire.webp"  class="photo" alt="Casino Cavalaire">
+                    <img src="img/cavalaire.webp"  class="photo" alt="Casino Cavalaire" loading="lazy">
                     <h4 class="text">Casino</h4>
                     <p class="ville">Cavalaire</p>
                 </section>
@@ -144,7 +144,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/aix.webp"  class="photo" alt="Casino Aix en Provence">
+                    <img src="img/aix.webp"  class="photo" alt="Casino Aix en Provence" loading="lazy">
                     <h4 class="text">Pasino Partouche</h4>
                     <p class="ville">Aix en Provence</p>
                 </section>
@@ -155,7 +155,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/seynesurmer.webp"  class="photo" alt="Casino la Seyne sur mer">
+                    <img src="img/seynesurmer.webp"  class="photo" alt="Casino la Seyne sur mer" loading="lazy">
                     <h4 class="text">Joa Casino</h4>
                     <p class="ville">La Seyne sur Mer</p>
                 </section>
@@ -166,7 +166,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/cassis.webp" class="photo" alt="Casino Cassis">
+                    <img src="img/cassis.webp" class="photo" alt="Casino Cassis" loading="lazy">
                     <h4 class="text">Casino</h4>
                     <p class="ville">Cassis</p>
                 </section>
@@ -177,7 +177,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/bandol.webp"  class="photo" alt="Casino Bandol">
+                    <img src="img/bandol.webp"  class="photo" alt="Casino Bandol" loading="lazy">
                     <h5 class="text">Pasino Partouche</h5>
                     <p class="ville">Bandol</p>
                 </section>
@@ -188,7 +188,7 @@
 
             <article class="imagecontener">
                 <section class="image-wrapper">
-                    <img src="img/laciotat.webp"  class="photo" alt="Casino La Ciotat">
+                    <img src="img/laciotat.webp"  class="photo" alt="Casino La Ciotat" loading="lazy">
                     <h4 class="text">Pasino Partouche</h4>
                     <p class="ville">La Ciotat</p>
                 </section>
@@ -197,7 +197,11 @@
                 </a>
             </article>
         </section>
-        <video src="vid/prevention.mp4" controls></video>
+        <video src="vid/prevention.mp4"
+       controls
+       preload="none"
+       poster="img/poster-video.webp">
+</video>
     </main>
 
     <footer class="footer" role="contentinfo">
@@ -208,7 +212,7 @@
         </nav>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
