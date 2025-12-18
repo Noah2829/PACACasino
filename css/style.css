@@ -5,7 +5,7 @@ body {
 }
 
 .fond {
-    background: url('../img/monaco.avif') center/cover;
+    background: url('../img/monaco.jpg') center/cover;
     height: 280px;
     animation: floatImage 4s ease-in-out infinite;
     transition: 0.3s ease;
