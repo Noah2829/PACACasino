@@ -78,8 +78,6 @@ input[type="radio"] {
 }
 
 .btn-submit {
-    background-color: var(--accent);
-    color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 30px;
@@ -90,6 +88,9 @@ input[type="radio"] {
     align-self: center;
     width: 200px;
     margin-top: 20px;
+    background-color: var(--accent);
+    color: #000; 
+    font-weight: 600;
 }
 
 .btn-submit:hover {
