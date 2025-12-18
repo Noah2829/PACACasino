@@ -318,7 +318,7 @@ p {
     color: white;
     transition: 0.3s ease;
     background-color: var(--accent);
-    color: #000; /* NOIR */
+    color: #000; 
     font-weight: 600;
 }
 
