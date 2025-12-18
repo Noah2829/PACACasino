@@ -5,7 +5,7 @@ body {
 }
 
 .fond {
-    background: url('../img/monaco.jpg') center/cover;
+    background: url('../img/fonmonaco.jpg') center/cover;
     height: 280px;
     animation: floatImage 4s ease-in-out infinite;
     transition: 0.3s ease;
@@ -181,6 +181,7 @@ nav>ul>li:hover>a {
 h1 {
     color: var(--accent);
     text-align: center;
+    color:#fecc04;
 }
 
 h2 {
