@@ -189,6 +189,7 @@ nav>ul>li:hover>a {
 h1 {
     color: var(--accent);
     text-align: center;
+    font-size: 2em;
 }
 
 h2 {
