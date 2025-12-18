@@ -1,13 +1,13 @@
 :root {
     --bg-body: #0d0000;
     --text-main: white;
-    --text-muted: gray;
+    --text-muted: #595959;
 
     --header-bg: transparent;
     --header-shadow: none;
     --nav-color: white;
 
-    --dropdown-bg: black;
+    --dropdown-bg: #0d0000;
     --dropdown-text: white;
     --dropdown-border: none;
 

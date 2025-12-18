@@ -103,20 +103,20 @@
 
 .left-column h3 {
     font-size: 2.2rem;
-    color: #fff;
+    color: var(--text-main);
     margin-bottom: 20px;
     font-family: serif;
 }
 
 .left-column p {
-    color: #ccc;
+    color: var(--text-main);
     line-height: 1.6;
     font-size: 1rem;
 }
 
 .avis-section h4 {
     font-size: 2rem;
-    color: #fff;
+    color: var(--text-main);
     margin-bottom: 10px;
 }
 
@@ -154,12 +154,11 @@
     width: 50px;
     height: 50px;
     object-fit: contain;
-    filter: invert(78%) sepia(35%) saturate(767%) hue-rotate(2deg) brightness(94%) contrast(91%);
     filter: none;
 }
 
 .icon-item p {
-    color: #fff;
+    color: var(--text-main);
     margin: 0;
     font-size: 1.1rem;
 }
@@ -172,7 +171,7 @@
 }
 
 .horaires h4 {
-    color: #fff;
+    color: var(--text-main);
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
@@ -180,7 +179,7 @@
 .horaires p {
     margin: 2px 0;
     font-size: 1.1rem;
-    color: #fff;
+    color: var(--text-main);
 }
 
 .itineraire-section {
@@ -191,7 +190,7 @@
 }
 
 .itineraire-section h4 {
-    color: #fff;
+    color: var(--text-main);
     font-size: 1.2rem;
     align-self: flex-start;
     width: 100%;
@@ -202,7 +201,6 @@
 .map-container {
     width: 100%;
     height: 300px;
-    /* Fixed height for the map */
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -229,7 +227,4 @@
 
 .btn-itineraire:hover {
     background-color: var(--accent-hover);
-}
-html{
-    scroll-behavior: smooth;
 }

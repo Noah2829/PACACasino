@@ -1,14 +1,14 @@
 :root {
     --bg-body: white;
-    --text-main: #333;
+    --text-main: #0d0000;
     --text-muted: #595959;
 
     --header-bg: white;
     --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --nav-color: black;
+    --nav-color: #0d0000;
 
     --dropdown-bg: white;
-    --dropdown-text: #333;
+    --dropdown-text: #0d0000;
     --dropdown-border: 1px solid #ccc;
 
     --accent: #D4AF37;
