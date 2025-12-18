@@ -312,13 +312,14 @@ p {
     margin-bottom: 15px;
     margin-top: 1px;
     width: 150px;
-    background-color: var(--accent);
     border-radius: 99px;
     font-size: 20px;
     text-decoration: none;
     color: white;
-
     transition: 0.3s ease;
+    background-color: var(--accent);
+    color: #000; /* NOIR */
+    font-weight: 600;
 }
 
 .btn:hover {
