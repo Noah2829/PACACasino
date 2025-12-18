@@ -1,15 +1,15 @@
 :root {
-    --bg-body: white;
+    --bg-body: #ffffff;
     --text-main: #0d0000;
     --text-muted: #595959;
 
-    --header-bg: white;
+    --header-bg: #ffffff;
     --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     --nav-color: #0d0000;
 
-    --dropdown-bg: white;
+    --dropdown-bg: #ffffff;
     --dropdown-text: #0d0000;
-    --dropdown-border: 1px solid #ccc;
+    --dropdown-border: 1px solid #ffffff;
 
     --accent: #D4AF37;
     --accent-hover: #d8bd6a;
