@@ -12,3 +12,6 @@ Personal project
      <img src="../img/plancannes.jpg">
     <p>Situé a 5min de port de Monaco </p>
     <button>Voir itinéraire</button> //
+
+
+ <img src="../img/cannesfond.jpg " width="5600" height="315" />
