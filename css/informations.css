@@ -1,0 +1,95 @@
+.info-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.school-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.school-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.school-info h2 {
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.school-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.profiles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.profile-card h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.profile-card h4 {
+    color: white;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.profile-card p {
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .profiles-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
