@@ -1,0 +1,19 @@
+:root {
+    --bg-body: white;
+    --text-main: #333;
+    --text-muted: #595959;
+
+    --header-bg: white;
+    --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --nav-color: black;
+
+    --dropdown-bg: white;
+    --dropdown-text: #333;
+    --dropdown-border: 1px solid #ccc;
+
+    --accent: #D4AF37;
+    --accent-hover: #d8bd6a;
+
+    --swiper-btn-bg: #F04E23;
+    --swiper-btn-hover: #4A261F;
+}

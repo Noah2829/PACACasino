@@ -1,0 +1,232 @@
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: none;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--accent);
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.play-button {
+    width: 80px;
+    height: 55px;
+    background-color: #E31C23;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    transition: transform 0.2s;
+}
+
+.play-button:hover {
+    transform: scale(1.05);
+}
+
+.play-triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid white;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+    padding: 60px 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.left-column h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.left-column p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.avis-section h4 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.rating-number {
+    font-size: 2rem;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.star-img {
+    height: 25px;
+}
+
+.icons-row {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: invert(78%) sepia(35%) saturate(767%) hue-rotate(2deg) brightness(94%) contrast(91%);
+    filter: none;
+}
+
+.icon-item p {
+    color: #fff;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.right-column {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.horaires h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.horaires p {
+    margin: 2px 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.itineraire-section {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.itineraire-section h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    /* Fixed height for the map */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.btn-itineraire {
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-itineraire:hover {
+    background-color: var(--accent-hover);
+}
