@@ -214,8 +214,6 @@
 }
 
 .btn-itineraire {
-    background-color: var(--accent);
-    color: white;
     text-decoration: none;
     padding: 12px 30px;
     border-radius: 25px;
@@ -223,6 +221,9 @@
     font-size: 1rem;
     display: inline-block;
     transition: 0.3s;
+     background-color: var(--accent);
+    color: #000; 
+    font-weight: 600;
 }
 
 .btn-itineraire:hover {
