@@ -230,3 +230,6 @@
 .btn-itineraire:hover {
     background-color: var(--accent-hover);
 }
+html{
+    scroll-behavior: smooth;
+}
